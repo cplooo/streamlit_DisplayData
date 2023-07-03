@@ -4,7 +4,7 @@ import pandas as pd
 from urllib.error import URLError
 import altair as alt
 
-@st.cache_data
+#@st.cache_data
 def get_data():
     URL = "https://github.com/cplooo/streamlit_DisplayData/blob/main/agri.csv"
     df = pd.read_csv(URL)
