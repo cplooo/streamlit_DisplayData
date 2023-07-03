@@ -6,7 +6,7 @@ import altair as alt
 
 #@st.cache_data
 def get_data():
-    URL = "https://github.com/cplooo/streamlit_DisplayData/blob/main/agri.csv"
+    URL = "https://raw.githubusercontent.com/cplooo/streamlit_DisplayData/main/agri.csv"
     df = pd.read_csv(URL)
     return df.set_index("Region")
 
